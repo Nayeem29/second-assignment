@@ -5,7 +5,13 @@ body {
   padding: 0px;
   background: #ffff;
 }
-
+h2,
+h3,
+h4,
+h6,
+p {
+  color: #3a3a3a;
+}
 .heading {
   display: flex;
   justify-content: space-between;
@@ -26,7 +32,7 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: black;
+  color: #3a3a3a;
   margin-right: 50px;
 }
 
@@ -49,6 +55,9 @@ nav li a {
 .text-part h2 {
   font-size: 52px;
   font-weight: 700;
+}
+.text-part p {
+  padding-bottom: 20px;
 }
 .click {
   width: 196px;
@@ -78,6 +87,9 @@ nav li a {
   font-weight: 600;
 }
 
+.main-part {
+  padding-bottom: 0px;
+}
 .card-view {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -137,4 +149,41 @@ h6 {
   position: relative;
   right: 5px;
   bottom: 2px;
+}
+
+/* ----------------------------------
+          This is Footer 
+-------------------------------------   */
+
+.last-part {
+  margin: 0px;
+  padding: 0px;
+  background-color: #272727;
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 37%;
+  padding-top: 5%;
+  margin-top: 10%;
+}
+.social-links ul {
+  display: flex;
+}
+.social-items {
+  list-style: none;
+}
+.social-items a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 30px;
+}
+.outer-part {
+  padding: 10px;
+  text-align: center;
+  color: #e02c6d;
+  font-size: 18px;
 }
