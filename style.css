@@ -74,7 +74,7 @@ nav li a {
   padding-left: 40%;
   margin-top: 10%;
   width: 262px;
-  height: 70px;
+  height: 40px;
   font-weight: 600;
 }
 
@@ -89,10 +89,15 @@ nav li a {
 .single-card {
   width: 329px;
   height: 476px;
+  border-radius: 5px;
+  border: 2px solid white;
+  box-shadow: 10px 5px 20px whitesmoke;
+  border-image-slice: 30%;
 }
 .single-card img {
   width: 300px;
   height: 256px;
+  background-size: cover;
 }
 .name h3,
 h4,
@@ -100,4 +105,36 @@ h6 {
   margin-top: 0;
   padding-top: 0px;
   margin-bottom: 0px;
+}
+.name h6 {
+  position: relative;
+  bottom: 20px;
+}
+.fa-star.fill {
+  color: #ffb319 !important;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+.rating {
+  display: flex;
+  justify-content: flex-start;
+}
+.num {
+  position: relative;
+  left: 5px;
+  bottom: 15px;
+}
+.more {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #e02c6d;
+  font-weight: 600;
+  font-size: 16px;
+}
+.more p {
+  position: relative;
+  right: 5px;
+  bottom: 2px;
 }
