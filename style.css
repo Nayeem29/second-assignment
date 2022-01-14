@@ -76,12 +76,24 @@ nav li a {
   cursor: pointer;
 }
 /*------------------- Main-Image-------------------- */
+@keyframes up-down {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+.img-part:hover {
+  animation: up-down 1s ease-in-out 0s infinite alternate;
+}
 .img-part img {
   width: 440px;
   height: 414px;
-  margin-right: 100px;
+  margin-right: 120px;
   margin-top: 70px;
 }
+
 /* -----------------------------------------------
           Main-Part & Card View
 ------------------------------------------------- */
