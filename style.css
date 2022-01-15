@@ -5,6 +5,8 @@ body {
   margin: 0px;
   padding: 0px;
   background: #ffff;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 h2,
 h3,
@@ -81,7 +83,7 @@ nav li a {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(30deg);
+    transform: rotate(15deg);
   }
 }
 .img-part:hover {
@@ -176,6 +178,37 @@ h6 {
   bottom: 2px;
 }
 
+/* -------------------------------------
+              Bonus-Part    
+  -----------------------------------------*/
+.container {
+  width: 1110px;
+  height: 270px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.bonus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-bonus {
+  padding: 20px 30px;
+  width: 404px;
+  height: 270px;
+  background-image: url(./images/Circle\ design.svg);
+  background-repeat: no-repeat;
+}
+
+.text-bonus {
+  padding-left: 20%;
+}
+.customer {
+  color: #e02c6d;
+  font-weight: 600;
+  font-size: 32px;
+}
+
 /* ----------------------------------
           This is Footer 
 -------------------------------------   */
@@ -211,4 +244,21 @@ h6 {
   text-align: center;
   color: #e02c6d;
   font-size: 16px;
+}
+
+/* -----------------------------------------
+              Media-Queries 
+  ------------------------------------------- */
+
+@media only screen and (max-width: 688px) {
+  * {
+    max-width: 100%;
+  }
+  /* .part-one {
+    height: ;
+  } */
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
 }
